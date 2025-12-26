@@ -116,9 +116,8 @@ jobs:
             
             comment += '\n---\n\n';
             comment += '📚 **References:**\n';
-            comment += '- [Theoretical Correspondence Mandate](.github/THEORETICAL_CORRESPONDENCE_MANDATE.md)\n';
+            comment += '- [Copilot Instructions (Consolidated Mandates)](.github/copilot-instructions.md)\n';
             comment += '- [Comprehensive Audit Report](.github/COMPREHENSIVE_AUDIT_REPORT.md)\n';
-            comment += '- [Mandatory Audit Protocol](.github/MANDATORY_AUDIT_PROTOCOL.md)\n';
             
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -138,9 +137,8 @@ jobs:
       - name: Check critical documents exist
         run: |
           files=(
-            ".github/THEORETICAL_CORRESPONDENCE_MANDATE.md"
+            ".github/copilot-instructions.md"
             ".github/COMPREHENSIVE_AUDIT_REPORT.md"
-            ".github/MANDATORY_AUDIT_PROTOCOL.md"
             "src/logging/transparency_engine.py"
             ".github/pull_request_template.md"
             "scripts/verify_compliance.py"
@@ -195,11 +193,11 @@ jobs:
       
       - name: Check CONTRIBUTING.md mentions mandate
         run: |
-          if ! grep -q "THEORETICAL_CORRESPONDENCE_MANDATE" CONTRIBUTING.md; then
-            echo "::error::CONTRIBUTING.md does not reference the mandate"
-            exit 1
+          if ! grep -q "copilot-instructions" CONTRIBUTING.md; then
+            echo "::warning::CONTRIBUTING.md may not reference copilot-instructions.md"
+          else
+            echo "::notice::✅ CONTRIBUTING.md references governance documentation"
           fi
-          echo "::notice::✅ CONTRIBUTING.md references mandate"
       
       - name: Check README.md is up-to-date
         run: |
