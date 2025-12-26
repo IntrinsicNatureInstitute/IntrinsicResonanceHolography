@@ -1,4 +1,4 @@
-# Intrinsic Resonance Holography v21.1: Computational Framework
+# Intrinsic Resonance Holography v21.4: Computational Framework
 
 <div align="right">
 
@@ -19,23 +19,25 @@
 
 | Document | Description |
 |----------|-------------|
-| [**IRH v21.1 Manuscript Part 1**](./Intrinsic_Resonance_Holography-v21.1-Part1.md) | 📖 Canonical theoretical manuscript - Foundation & Framework (Sections 1-4) |
-| [**IRH v21.1 Manuscript Part 2**](./Intrinsic_Resonance_Holography-v21.1-Part2.md) | 📖 Canonical theoretical manuscript - QM, Appendices & Predictions (Sections 5-8 + Appendices A-K) |
+| [**IRH v21.4 Manuscript Part 1**](./Intrinsic-Resonance-Holography-21.4-Part1.md) | 📖 Canonical theoretical manuscript - Foundation & Framework (Sections 1-4) |
+| [**IRH v21.4 Manuscript Part 2**](./Intrinsic-Resonance-Holography-21.4-Part2.md) | 📖 Canonical theoretical manuscript - QM, Appendices & Predictions (Sections 5-8 + Appendices A-K) |
 | [**Technical Reference Manual**](./docs/TECHNICAL_REFERENCE.md) | Exhaustive specifications for all modules, APIs, and implementations |
 | [**Continuation Guide**](./docs/CONTINUATION_GUIDE.md) | Next phases, priority tasks, and implementation roadmap |
 | [**Theoretical Correspondence Map**](./THEORETICAL_CORRESPONDENCE.md) | Bidirectional mapping between code and manuscript equations |
 | [**Architecture Overview**](./docs/architectural_overview.md) | System design and ontological layer structure |
 | [**Desktop App Roadmap**](./docs/DEB_PACKAGE_ROADMAP.md) | Implementation plan for .deb desktop application |
 | [**Contributing Guidelines**](./CONTRIBUTING.md) | How to contribute to the project |
-| [**GitHub Copilot Instructions**](./.github/copilot-instructions.md) | 🤖 Comprehensive guide for GitHub Copilot users (coding standards, patterns, domain knowledge) |
+| [**GitHub Copilot Instructions**](./.github/copilot-instructions.md) | 🤖 **PRIMARY DOCUMENTATION** - Single source of truth for all development guidelines, mandates, compliance policies, and session tracking |
+
+**Note:** As of December 2025, all development mandates, progress tracking, and compliance policies are consolidated in [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) per the new centralized documentation governance model. This file is updated after every development session with current status and next steps.
 
 ---
 
 ## 🎯 Overview
 
-**Intrinsic Resonance Holography (IRH) v21.1** is a unified theory deriving all fundamental physical laws, constants, and observable phenomena from axiomatically minimal quantum-informational principles. This repository provides the complete computational implementation, achieving:
+**Intrinsic Resonance Holography (IRH) v21.4** is a unified theory deriving all fundamental physical laws, constants, and observable phenomena from axiomatically minimal quantum-informational principles. This repository provides the complete computational implementation, achieving:
 
-- ✅ **100% theoretical coverage**: All 17 critical equations from the IRH v21.1 Manuscript ([Part 1](./Intrinsic_Resonance_Holography-v21.1-Part1.md), [Part 2](./Intrinsic_Resonance_Holography-v21.1-Part2.md)) implemented
+- ✅ **100% theoretical coverage**: All 17 critical equations from the IRH v21.4 Manuscript ([Part 1](./Intrinsic-Resonance-Holography-21.4-Part1.md), [Part 2](./Intrinsic-Resonance-Holography-21.4-Part2.md)) implemented
 - ✅ **970+ passing tests**: Comprehensive validation across 6 implementation phases + optimization tiers + ML
 - ✅ **Web interface**: FastAPI backend + React frontend with interactive visualizations
 - ✅ **Desktop application**: User-friendly GUI with transparency engine and auto-updates
@@ -517,7 +519,7 @@ standard_model → cosmology → quantum_mechanics → falsifiable_predictions
 
 | Component | Description | IRH Reference |
 |-----------|-------------|---------------|
-| **IRH v21.1 Manuscript** | Canonical theoretical manuscript ([Part 1](./Intrinsic_Resonance_Holography-v21.1-Part1.md), [Part 2](./Intrinsic_Resonance_Holography-v21.1-Part2.md)) | All sections |
+| **IRH v21.4 Manuscript** | Canonical theoretical manuscript ([Part 1](./Intrinsic-Resonance-Holography-21.4-Part1.md), [Part 2](./Intrinsic-Resonance-Holography-21.4-Part2.md)) | All sections |
 | **`src/primitives/`** | Quaternions, group manifolds (G_inf), QNCD metric | §1.0.1 |
 | **`src/cgft/`** | Field theory action S_kin + S_int + S_hol | §1.1 (Eqs. 1.1-1.4) |
 | **`src/rg_flow/`** | β-functions, Cosmic Fixed Point, Wetterich equation | §1.2-1.3 (Eqs. 1.12-1.14) |
@@ -585,7 +587,7 @@ See [`docs/ROADMAP.md`](./docs/ROADMAP.md) for complete feature specifications a
 
 All contributions must maintain:
 
-- ✅ **Theoretical traceability**: Every function cites IRH v21.1 Manuscript sections/equations
+- ✅ **Theoretical traceability**: Every function cites IRH v21.4 Manuscript sections/equations
 - ✅ **Test coverage**: ≥90% coverage with theoretical invariant tests
 - ✅ **Documentation**: Inline theoretical context and references
 - ✅ **Code quality**: PEP 8 compliance, type hints, docstrings
@@ -600,7 +602,7 @@ If using this framework in research, please cite:
 
 ```bibtex
 @software{IRH_v21_computational_2025,
-  title={Intrinsic Resonance Holography v21.1: Computational Framework},
+  title={Intrinsic Resonance Holography v21.4: Computational Framework},
   author={McCrary, Brandon D.},
   year={2025},
   month={December},
@@ -610,7 +612,7 @@ If using this framework in research, please cite:
 }
 
 @article{IRH_v21_theory_2025,
-  title={Intrinsic Resonance Holography v21.1: Unified Theory of Emergent Reality},
+  title={Intrinsic Resonance Holography v21.4: Unified Theory of Emergent Reality},
   author={McCrary, Brandon D.},
   journal={SSRN preprint},
   year={2025},
@@ -666,8 +668,8 @@ This work builds upon decades of research in:
 - **Algorithmic Information Theory** (Kolmogorov, Chaitin, Solomonoff)
 - **Renormalization Group Methods** (Wilson, Wetterich, et al.)
 
-See the IRH v21.1 Manuscript ([Part 1](./Intrinsic_Resonance_Holography-v21.1-Part1.md), [Part 2](./Intrinsic_Resonance_Holography-v21.1-Part2.md)) for complete references.
+See the IRH v21.4 Manuscript ([Part 1](./Intrinsic-Resonance-Holography-21.4-Part1.md), [Part 2](./Intrinsic-Resonance-Holography-21.4-Part2.md)) for complete references.
 
 ---
 
-> **Living Framework**: This codebase evolves in lockstep with theoretical refinements to the IRH v21.1 Manuscript ([Part 1](./Intrinsic_Resonance_Holography-v21.1-Part1.md), [Part 2](./Intrinsic_Resonance_Holography-v21.1-Part2.md)). Always verify you're using the latest manuscript version for reproducibility.
+> **Living Framework**: This codebase evolves in lockstep with theoretical refinements to the IRH v21.4 Manuscript ([Part 1](./Intrinsic-Resonance-Holography-21.4-Part1.md), [Part 2](./Intrinsic-Resonance-Holography-21.4-Part2.md)). Always verify you're using the latest manuscript version for reproducibility.
